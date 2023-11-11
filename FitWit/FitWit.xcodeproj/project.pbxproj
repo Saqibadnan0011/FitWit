@@ -13,6 +13,7 @@
 		185E26C42AF5608A007BF2F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185E26C32AF5608A007BF2F8 /* Preview Assets.xcassets */; };
 		185E26CC2AF564D6007BF2F8 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E26CB2AF564D6007BF2F8 /* BackgroundView.swift */; };
 		185E26CE2AF5A32A007BF2F8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E26CD2AF5A32A007BF2F8 /* HomeView.swift */; };
+		188293BB2B001D4A00502EA8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188293BA2B001D4A00502EA8 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		185E26C32AF5608A007BF2F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		185E26CB2AF564D6007BF2F8 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		185E26CD2AF5A32A007BF2F8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		188293BA2B001D4A00502EA8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				185E26BE2AF56087007BF2F8 /* ContentView.swift */,
 				185E26CB2AF564D6007BF2F8 /* BackgroundView.swift */,
 				185E26CD2AF5A32A007BF2F8 /* HomeView.swift */,
+				188293BA2B001D4A00502EA8 /* SplashView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			files = (
 				185E26CC2AF564D6007BF2F8 /* BackgroundView.swift in Sources */,
 				185E26CE2AF5A32A007BF2F8 /* HomeView.swift in Sources */,
+				188293BB2B001D4A00502EA8 /* SplashView.swift in Sources */,
 				185E26BF2AF56087007BF2F8 /* ContentView.swift in Sources */,
 				185E26BD2AF56087007BF2F8 /* FitWitApp.swift in Sources */,
 			);
