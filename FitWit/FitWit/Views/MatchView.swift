@@ -13,8 +13,8 @@ struct MatchView: View {
     
     var body: some View {
         ZStack {
-            Color.black
-                .ignoresSafeArea(.all)
+            //Color.black
+                //.ignoresSafeArea(.all)
             if !show {
                 Spacer()
                 VStack (alignment: .leading, spacing: 12) {
@@ -41,23 +41,28 @@ struct MatchView: View {
                     RoundedRectangle(cornerRadius: 20, style: .continuous)
                         .matchedGeometryEffect(id: "mask", in: namespace)
                 )
-                .frame(height: 300)
+                .frame(height: 500)
                 .padding(20)
             } else {
                 ScrollView {
-                    VStack (alignment: .leading, spacing: 12) {
+                    VStack {
                         Spacer()
-                        Text("Daily Progress")
-                            .font(.title.weight(.bold))
-                            .matchedGeometryEffect(id: "title", in: namespace)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        Text("Steps and more".uppercased())
-                            .font(.footnote.bold())
-                            .matchedGeometryEffect(id: "subtitle", in: namespace)
-                        Text("See your daily progress and make more your body fit and healthy")
-                            .font(.footnote)
-                            .matchedGeometryEffect(id: "text", in: namespace)
                     }
+                    .frame(maxWidth: .infinity)
+                    .overlay(
+                        VStack (alignment: .leading, spacing: 12) {
+                            Text("Daily Progress")
+                                .font(.title.weight(.bold))
+                                .matchedGeometryEffect(id: "title", in: namespace)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            Text("Steps and more".uppercased())
+                                .font(.footnote.bold())
+                                .matchedGeometryEffect(id: "subtitle", in: namespace)
+                            Text("See your daily progress and make more your body fit and healthy")
+                                .font(.footnote)
+                                .matchedGeometryEffect(id: "text", in: namespace)
+                        }
+                    )
                     .padding(20)
                     .foregroundStyle(.white)
                     .background(
