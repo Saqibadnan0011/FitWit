@@ -14,15 +14,34 @@ struct MatchView: View {
     var body: some View {
         ZStack {
             if !show {
-                Text("Daily Progress")
-                    .font(.title.weight(.bold))
-                    .matchedGeometryEffect(id: "title", in: namespace)
+                VStack {
+                    Text("Daily Progress")
+                        .font(.title.weight(.bold))
+                        .matchedGeometryEffect(id: "title", in: namespace)
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    Text("See your daily progress and make more your body fit and healthy".uppercased())
+                        .font(.footnote.bold())
+                        .matchedGeometryEffect(id: "subtitle", in: namespace)
+                }
+                .foregroundStyle(.white)
+                .background(
+                    Color.red.matchedGeometryEffect(id: "background", in: namespace)
+                )
             } else {
-                Text("Daily Progress")
-                    .font(.title.weight(.bold))
-                    .matchedGeometryEffect(id: "title", in: namespace)
-                    .frame(maxWidth: .infinity, alignment: .trailing)
+                VStack {
+                    Spacer()
+                    Text("Daily Progress")
+                        .font(.title.weight(.bold))
+                        .matchedGeometryEffect(id: "title", in: namespace)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    Text("See your daily progress and make more your body fit and healthy".uppercased())
+                        .font(.footnote.bold())
+                        .matchedGeometryEffect(id: "subtitle", in: namespace)
+                }
+                .foregroundStyle(.white)
+                .background(
+                    Color.red.matchedGeometryEffect(id: "background", in: namespace)
+                )
             }//else
         }
         .onTapGesture {
